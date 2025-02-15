@@ -35,7 +35,7 @@ app.post("/customer",async(req,res)=>{
 app.use("/services",serviceRoutes);
 async function main() {
     try {
-        await mongoose.connect(process.env.URL);
+        await mongoose.connect("mongodb://127.0.0.1:27017/cpucare");
         console.log('successfully connected to database');
     } catch (err) {
         console.log(err);
