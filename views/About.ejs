@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/style/ck.css">    
+
+
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100">
+    <%-include ("./includes/header.ejs") %>
+        <main class="flex flex-col gap-y-6 mt-6">
+            <h3 class="text-2xl font-semibold px-14 text-center">About Us</h3>
+            <div class="flex gap-x-6 px-14">
+                <div class="h-52 bg-white w-1/3 px-8 py-4 flex flex-col gap-y-4 justify-center rounded-md">
+                    <h4 class="font-bold text-center">Who Are We</h4>
+                    <p>CPUCARE is a leading Computer Services Provider.We provide services across the
+                        globe.Our services include Windows Installation,Software Installation,PC/Laptop Update,Website
+                        Designing
+                        etc.</p>
+                </div>
+                <div class="h-52 bg-white w-1/3 px-8 py-4 flex flex-col gap-y-4  rounded-md">
+                    <h4 class="font-bold text-center">Our Mission</h4>
+                    <p>Our Mission is to help people.We have a team of dedicated experts for each service that we
+                        mention in our portfolio.</p>
+                </div>
+                <div class="h-52 bg-white w-1/3 px-8 py-4 flex flex-col gap-y-4 justify-center rounded-md">
+                    <h4 class="font-bold text-center">What We Do</h4>
+                    <ul class=" flex flex-col gap-y-1">
+                        <li class="text-blue-500 hover:text-black">
+                            <a href="">Windows Installation</a>
+                        </li>
+                        <li class="hover:text-black text-blue-500">
+                            <a href="">PC/Laptop Update</a>
+                        </li>
+                        <li class="hover:text-black  text-blue-500">
+                            <a href="">Software Installation</a>
+                        </li>
+                        <li class="hover:text-black text-blue-500">
+                            <a href="">Website Designing</a>
+                        </li>
+                        <li class="hover:text-black text-blue-500">
+                            <a href="">Data Recovery</a>
+                        </li>
+                        <li class="hover:text-black text-blue-500">
+                            <a href="">Remote Support</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </main>
+        <%-include ("./includes/footer.ejs") %>
+</body>
+
+</html>

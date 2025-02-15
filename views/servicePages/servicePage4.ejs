@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/ck.css">    
+
+
+    <title>CPUCARE-Website Designing Service</title>
+</head>
+<body class="bg-gray-100">
+    <%- include("../includes/header.ejs")%>
+    <main class="flex justify-between gap-x-14 px-14 py-4 mt-8">
+        <section class="w-1/2">
+            <div class=" h-96 px-8 py-4 bg-white rounded-lg flex flex-col  items-center gap-y-4">
+                <i class="fa-solid fa-pen-nib text-4xl text-rose-400"></i>
+                <h3 class="text-2xl font-semibold text-rose-500">Website Designing</h3>
+                <p>Website designing is about creating an online experience that’s both functional and visually appealing, making it easier for users to navigate and engage with your content.Website design is more than just choosing colors and fonts—it's about crafting a seamless, intuitive experience that reflects your brand and keeps visitors coming back.</p>
+            </div>
+
+        </section>
+        <section class="w-1/2 flex flex-col gap-y-4">
+            <h5 class="font-bold text-xl">Price: 300$</h5>
+            <form action="/customer" class="flex flex-col gap-y-6" method="post">
+                <input type="text" class="px-2 py-2 border border-black rounded-md" name="username" id="" placeholder="Your Name (required)" required>
+                <input type="email" class="px-2 py-2 border border-black rounded-md" name="email" id="" placeholder="Your Email (required)" required>
+                <input type="text" class="px-2 py-2 border border-black rounded-md" name="Phone" id="" placeholder="Your Phone Number (required)" required>
+                <textarea name="message" id="" placeholder="YOUR MESSAGE" class="px-2 py-1 border-2 border-black rounded-md"
+                required></textarea>
+
+                <button class="px-2 py-3 bg-blue-500 text-white rounded-md">Purchase</button>
+            </form>
+        </section>
+    </main>
+    <%- include("../includes/footer.ejs")%>
+</body>
+</html>
